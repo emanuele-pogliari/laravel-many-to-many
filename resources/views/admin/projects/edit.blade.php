@@ -52,7 +52,7 @@
                     <div class="form-check">
                         
                         
-                        <input class="form-check-input" type="checkbox" name="technologies[]" id="technology-{{$technology->id}}"
+                        <input class="form-check-input" type="checkbox" name="technologies[]" id="technology-{{$technology->id}}" value="{{$technology->id}}"
                         @if($errors->any())
 
                         {{ in_array($technology->id, old('technologies', [])) ? 'checked' : '' }}
