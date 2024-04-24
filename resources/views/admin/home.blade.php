@@ -41,9 +41,10 @@
                 </div>
                 <div class="col-6 p-3">
                     <div class="card">
-                        <div class="card-header fs-2">{{ __('Placeholder') }}</div>
-                        <div class="card-body fs-4 px-5 d-flex flex-column gap-4">
-                           Placeholder for future functionality 2
+                        <div class="card-header fs-2">{{ __('Manage Technologies') }}</div>
+                        <div class="card-body fs-4 px-5 d-flex d-flex justify-content-between  gap-4">
+                           <div class="text-center">Manage Techs <a href="{{route('admin.technologies.index')}}"><button class="btn btn-primary btn-lg">Manage Techs</button></a></div>
+                            <div class="text-center">Create New Tech <a href="{{route('admin.technologies.create')}}"><button class="btn btn-primary btn-lg">Create Techs</button></a></div>
                         </div>
                     </div>
                 </div>
