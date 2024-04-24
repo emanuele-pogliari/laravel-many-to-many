@@ -47,13 +47,25 @@
                 </div>
               
                 <div class="mb-3">
-                    <label for="used_tech" class="form-label">Used Tech</label>
-                    <input type="text" class="form-control @error('used_tech') is-invalid @enderror" id="used_tech" name="used_tech" value="{{ old('used_tech') ?? $project->used_tech}}">
-                    @error('used_tech')
-                    <div class="invalid-feedback">
-                        {{$message}}
-                    </div>
-                @enderror
+                    <label class="form-check-label" for="">Technologies used</label>
+                    @foreach($technologies as $technology)
+                    <div class="form-check">
+                        
+                        
+                        <input class="form-check-input" type="checkbox" name="technologies[]" id="technology-{{$technology->id}}"
+                        @if($errors->any())
+
+                        {{ in_array($technology->id, old('technologies', [])) ? 'checked' : '' }}
+
+                        @else 
+
+                        {{ $project->technologies->contains($technology) ? 'checked' : '' }}
+                        @endif
+                        >
+
+                        <label for="technology-{{$technology->id}}" class="form-check-label">{{$technology->name}}</label>
+                      </div>
+                      @endforeach
                 </div>
 
                 <div class="mb-3">
