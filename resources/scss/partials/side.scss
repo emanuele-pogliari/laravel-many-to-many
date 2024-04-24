@@ -1,0 +1,41 @@
+@import "/resources/scss/partials/variables";
+@import "/resources/scss/partials/mixins";
+.my-content-side {
+    height: 100%;
+    h3 {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    .panel-name {
+        @include side-group-divider;
+        h2 {
+            font-size: 1.5em;
+        }
+    }
+
+    .search {
+        position: relative;
+        box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+    }
+
+    .search input {
+        height: 50px;
+        text-indent: 25px;
+        border: 2px solid #d6d4d4;
+    }
+
+    .search .fa-search {
+        position: absolute;
+        top: 15px;
+        left: 16px;
+    }
+
+    .usr-box {
+        //border top and bottom 1 pixel solid grey
+        @include side-group-divider;
+        img {
+            width: 50px;
+        }
+    }
+}
