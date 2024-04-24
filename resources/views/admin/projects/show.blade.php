@@ -21,7 +21,12 @@
                 <div class="card-body">
                   <h3 class="title">Name: {{$project->name}}</h3>
                   <p class="desc fs-4">Description: {{$project->description}}</p>
-                  <p class="used_tech fs-4">Languages Used: {{$project->used_tech}}</p>
+                  <div>
+                    <span>Used tech:</span>
+                    @foreach($project->technologies as $technology)
+                        <span>{{$technology->name}}</span>
+                    @endforeach
+                  </div>
                   <p>{{$project->type?->name}}</p>
                   <a class="link-repo fs-4" href="{{$project->url_repo}}">Link Repo</a>
                   <p class="date fs-4">Pubblication Date: {{$project->date}}</p>
