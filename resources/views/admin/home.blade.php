@@ -3,7 +3,7 @@
 
 @section('content')
 
-<div class="container-fluid py-5">
+<div class="container-fluid py-4">
 
 <div class="row my-row mx-auto">
     <div id="sidebar">
