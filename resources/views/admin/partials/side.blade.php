@@ -17,10 +17,6 @@
     </ul>
 </div>
     <div class="profile-opt d-flex flex-column gap-4 mb-3">
-        {{-- <div class="usr-box d-flex align-items-center gap-4 py-4">
-            <img src="{{ Vite::asset('resources/img/profile.png') }}" alt="">
-            <h3 class="m-0">{{auth()->user()->name}}</h3>
-        </div> --}}
         <ul class="list-unstyled">
             <li class="fs-4 p-2">Logout</li>
         </ul>
