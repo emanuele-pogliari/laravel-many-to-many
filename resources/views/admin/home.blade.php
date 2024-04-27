@@ -10,7 +10,8 @@
         @include('admin/partials/side')
     </div>
     <div id="main-content">
-        <h1 class="p-5">Welcome Back {{auth()->user()->name}}!</h1>
+        @include('admin/partials/nav')
+        <h1 class="p-4">Welcome Back {{auth()->user()->name}}!</h1>
         <div class="container-fluid">
             <div class="row mx-auto justify-content-center w-75 p-3">
                 <div class="col-6 p-3">

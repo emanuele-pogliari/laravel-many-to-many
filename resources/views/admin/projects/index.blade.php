@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('content')
-<div class="container-fluid">
-    <div class="row">
+<div class="container-fluid py-5">
+    <div class="row my-row mx-auto">
         <div id="sidebar">
             @include('admin/partials/side')
         </div>
