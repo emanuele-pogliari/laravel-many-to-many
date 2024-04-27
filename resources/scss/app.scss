@@ -1,9 +1,24 @@
 @import "~bootstrap/scss/bootstrap";
 @import "/resources/scss/partials/variables";
 
+body {
+    background-color: rgb(229, 229, 229);
+}
+
+.my-row {
+    width: 90vw;
+    height: 90vh;
+
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: #534e4e;
+
+    //test
+    border: 1px solid #ccc;
+}
+
 #sidebar {
     width: 300px;
-    height: calc(100vh - 67.59px);
     background-color: #354554;
     overflow-y: auto;
 }
@@ -13,7 +28,6 @@
 #main-content-show,
 #main-content-edit,
 #main-content-create {
-    width: calc(100vw - 300px);
-    height: calc(100vh - 67.59px);
+    width: calc(100% - 300px);
     overflow-y: auto;
 }
